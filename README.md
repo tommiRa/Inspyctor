@@ -2,7 +2,10 @@
 The following instruction describe an example workflow for detection of plasmid insertion sites. 
 
 ## Prerequisites
-Samtools, BWA and PICARD need to be installed and the paths to binaries have to be added to PATH variable. Samtools can be found from : https://github.com/samtools/samtools and BWA can be found from : http://bio-bwa.sourceforge.net/
+The following software need to be installed and added to path
+1. [Samtools](https://github.com/samtools/samtools)    
+2. [BWA](http://bio-bwa.sourceforge.net/)
+3. [PICARD](https://broadinstitute.github.io/picard/)
 
 ## Preparation of hybrid index for read alignment 
 Before the read alignment a hybrid index containing the chromosomes and the plasmid sequence must be prepared. Inspyctor toolkit provides a wrapper script for generating the hybrid index files for BWA. 
