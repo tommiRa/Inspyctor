@@ -25,7 +25,7 @@ samtools sort filtered.bam > filtered.sorted.bam
 ```
 Finally the duplicates are marked using PICARD
 ```
-java -Xmx24g -jar picard.jar MarkDuplicates I=filtered.sorted.bam O=final_dp_markded.bam M=duplication_metrix
+java -Xmx24g -jar picard.jar MarkDuplicates I=filtered.sorted.bam O=final_dp_marked.bam M=duplication_metrix
 ```
 ## Detection of plasmid insertion sites  
 
