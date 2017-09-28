@@ -2,7 +2,7 @@
 The following instruction describe an example workflow for detection of plasmid insertion sites. 
 
 ## Prerequisites
-The following software need to be installed and added to path
+The following software need to be installed and added to path:
 1. [Samtools](https://github.com/samtools/samtools)    
 2. [BWA](http://bio-bwa.sourceforge.net/)
 3. [PICARD](https://broadinstitute.github.io/picard/)
