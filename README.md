@@ -31,7 +31,7 @@ Finally the duplicates are marked using PICARD
 java -Xmx24g -jar picard.jar MarkDuplicates I=filtered.sorted.bam O=final_dp_marked.bam M=duplication_metrix
 ```
 ## Detection of plasmid insertion sites  
-We need to indicate the insert header (-h flag) which refers to the same identifier we set earlier when preparing the composite genome index. In this example we want to omit the duplicates by adding the -d flag. The script also requires the length (bases) of the inserted sequence.
+We need to indicate the insert header (-h flag) which refers to the same identifier we set earlier when preparing the composite genome index. In this example we want to omit the duplicates by adding the -d flag. The script also requires the length (bases) of the inserted sequence (-l flag).
 ```
 python find_insertion_sites.py -h insert_header -i filtered.sorted.bam -d -l 6201 -o output_directory
 ```
