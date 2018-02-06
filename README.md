@@ -7,7 +7,7 @@ The following software need to be installed and added to path:
 2. [BWA](http://bio-bwa.sourceforge.net/)
 3. [PICARD](https://broadinstitute.github.io/picard/)
 
-## Preparation of hybrid index for read alignment 
+## Preparation of composite index for read alignment 
 Before the read alignment a hybrid index containing the chromosomes and the plasmid sequence must be prepared. Inspyctor toolkit provides a wrapper script for generating the hybrid index files for BWA. 
 ```
 python prepare_hybrid_index.py -g genome.fa -p plasmid.fa -o bwa_index_dir
