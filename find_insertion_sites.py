@@ -8,7 +8,7 @@ import os
 
 parser = argparse.ArgumentParser(description='Find potential insertion sites')
 parser.add_argument('-i','--inputBAM', dest="inputBAM")
-parser.add_argument('-a','--insert_ID', dest="insertID")
+parser.add_argument('-a','--insert_header', dest="insertID")
 parser.add_argument('-l','--insert_length', dest="insertLength")
 parser.add_argument('-d','--ignore_duplicates', dest="iduplicates", action="store_true")
 parser.add_argument('-m','--minimum_read_count',type=int, dest="min_readcount", default = 3)
