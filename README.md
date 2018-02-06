@@ -8,9 +8,9 @@ The following software need to be installed and added to path:
 3. [PICARD](https://broadinstitute.github.io/picard/)
 
 ## Preparation of composite genome index for read alignment 
-Before the read alignment a composite index containing the chromosomes and the insert sequence must be prepared. Inspyctor toolkit provides a wrapper script for generating the hybrid index files for BWA. 
+Before the read alignment a composite index containing the chromosomes and the insert sequence must be prepared. Inspyctor toolkit provides a wrapper script for generating the hybrid index files for BWA. In addition to genome and insert fasta files a header will be spesified to be used to identifier for the insert sequence in later analysis steps. 
 ```
-python prepare_hybrid_index.py -g genome.fa -p insert.fa -h insert_header -o bwa_index_dir
+python prepare_composite_genome_index.py -g genome.fa -p insert.fa -h insert_header -o bwa_index_dir
 ```
 ## Read alignment with BWA
 Reads are aligned using BWA mem (without -M option). The following command aligns the reads using 4 cores and pipes the output to samtools wich converts the alignments to bam-format:
